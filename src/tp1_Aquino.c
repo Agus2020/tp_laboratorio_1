@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "operaciones.h"
+
 int main(void) {
 	setbuf(stdout,NULL);
 	int A,B,opcion,flag=0,flag2=0,flag3=0,s,r,m,f,f2;
@@ -8,33 +9,22 @@ int main(void) {
 	    do
 	    {
 	    	clear();
+	    	mostrarAyB(flag,flag2,A,B);
 	        printf("1.Ingresar 1er operando \n");
 	        printf("2.Ingresar 2do operando \n");
 	        printf("3.Calcular todas las operaciones \n");
 	        printf("4.Informar resultados \n");
 	        printf("5.Salir");
-	        if(flag)
-	        {
-	            printf("\nA = %d",A);
-	        }
-	        else
-	        {
-	            printf("\nA = X");
-	        }
-	        if(flag2)
-	        {
-	            printf("\nB = %d",B);
-	        }
-	        else
-	        {
-	            printf("\nB = Y");
-	        }
 	        fflush(stdin);
 	        printf("\nEliga una opcion:");
 	        scanf("%d",&opcion);
 	        switch(opcion)
 	        {
 	        case 1:
+	        	if(flag3)
+	        	{
+	        		flag3=0;
+	        	}
 	        	clear();
 	            flag=1;
 	            A=ingresarNumero();
@@ -42,6 +32,10 @@ int main(void) {
 	            system("pause");
 	            break;
 	        case 2:
+	        	if(flag3)
+	        	{
+	        		flag3=0;
+	        	}
 	        	clear();
 	            flag2=1;
 	            B=ingresarNumero();
@@ -126,3 +120,4 @@ int main(void) {
 	    while(opcion!=5);
 	return EXIT_SUCCESS;
 }
+

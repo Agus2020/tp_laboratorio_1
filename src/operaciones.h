@@ -48,4 +48,12 @@ float division(float num1,float num2);
 
 int calcularFactorial(int numeroACalcular);
 
+
+/*
+ * mostrarAyB
+ * Muestra los valores de A y B en el menu
+ * */
+void mostrarAyB(int flag,int flag2,int A,int B);
+
+
 #endif /* OPERACIONES_H_ */

@@ -41,3 +41,23 @@ int calcularFactorial(int numeroACalcular)
 	}
 	return factorial;
 }
+void mostrarAyB(int flag,int flag2,int A,int B)
+{
+	if(flag)
+	{
+		printf("\nA = %d",A);
+	}
+	else
+	{
+		printf("\nA = X");
+	}
+	if(flag2)
+	{
+		printf("\nB = %d",B);
+	}
+	else
+	{
+		printf("\nB = Y");
+	}
+	printf("\n");
+}
