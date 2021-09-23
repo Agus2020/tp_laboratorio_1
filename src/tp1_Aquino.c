@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "operaciones.h"
-
+#include "validaciones.h"
 int main(void) {
 	setbuf(stdout,NULL);
 	int A,B,opcion,flag=0,flag2=0,flag3=0,s,r,m,f,f2;
@@ -27,7 +27,7 @@ int main(void) {
 	        	}
 	        	clear();
 	            flag=1;
-	            A=ingresarNumero();
+	            utn_getEntero(&A,3,"Ingrese un numero:","Error\n",1,999);
 	            printf("\n");
 	            system("pause");
 	            break;
@@ -38,7 +38,7 @@ int main(void) {
 	        	}
 	        	clear();
 	            flag2=1;
-	            B=ingresarNumero();
+	            utn_getEntero(&B,3,"Ingrese un numero:","Error\n",1,999);
 	            printf("\n");
 	            system("pause");
 	            break;

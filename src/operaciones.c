@@ -26,10 +26,10 @@ int multiplicar(int num1,int num2)
     int resultado = num1 * num2;
     return resultado;
 }
-float division(float num1,float num2)
+float division(int num1,int num2)
 {
     float resultado;
-    resultado = num1/num2;
+    resultado =  num1/(float)num2 ;
     return resultado;
 }
 int calcularFactorial(int numeroACalcular)

@@ -39,7 +39,7 @@ int multiplicar(int num1,int num2);
  * division
  * Realiza la division de los numeros cargados
  * */
-float division(float num1,float num2);
+float division(int num1,int num2);
 
 /*
  * calcularFactorial
